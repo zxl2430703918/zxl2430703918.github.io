@@ -1,0 +1,445 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="linux面试题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面试问题">
+<meta property="og:url" content="http://example.com/2022/07/14/%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:site_name" content="5-12 23:30">
+<meta property="og:description" content="linux面试题">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-07-14T08:10:13.000Z">
+<meta property="article:modified_time" content="2022-07-14T18:12:24.253Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  <title>面试问题 - 5-12 23:30</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="面试问题">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-07-14 08:10" pubdate>
+        July 14, 2022 am
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.1k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      10 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">面试问题</h1>
+            
+            <div class="markdown-body">
+              <h1 id="linux面试题"><a href="#linux面试题" class="headerlink" title="linux面试题"></a>linux面试题</h1><span id="more"></span>
+
+<h2 id="1、linux文件类型有几种？"><a href="#1、linux文件类型有几种？" class="headerlink" title="1、linux文件类型有几种？"></a>1、linux文件类型有几种？</h2><ul>
+<li><p>```sh<br>7种。<br>1、普通文件类型。</p>
+<div class="code-wrapper"><pre><code class="hljs">纯文本文件(ASCII)
+二进制文件(binary)
+数据格式的文件(data)
+</code></pre></div>
+<p>2、目录文件类型。<br>   用于存放文件名以及其相关信息的文件，是内核组织文件系统的基本节点。目录文件可以包含下一级文    件目录或者普通文件，在Linux中，目录文件是一种文件<br>3、块设备文件类型。<br>   就是存储数据以供系统存取的接口设备，简单而言就是硬盘。例如一号硬盘的代码是 /dev/hda1等文件。<br>4、字符设备类型。<br>   字符设备文件：即串行端口的接口设备，例如键盘、鼠标等等。<br>5、套接字文件类型。<br>   这类文件通常用在网络数据连接。可以启动一个程序来监听客户端的要求，客户端就可以通过套接字来进行数据通信。<br>6、管道文件类型。<br>   是一种很特殊的文件，主要用于不同进程的信息传递。当两个进程需要进行数据或者信息传递时，可以    使用通道文件，一个进程将需要传递的数据或者信息写入管道的一端，另一进程从管道的另一端取得所    需要的数据或者信息，通常管道是建立在调整缓存中。<br>7、链接文件类型。<br>   是一种特殊文件，指向一个真实存在的文件链接，类似于Windows下的快捷方式，链接文件的不同，又    可分为硬链接文件和符号链接文件。</p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></div></td><td class="code"><pre><code class="hljs mipsasm"><br><br><span class="hljs-comment">## 2、批量修改文件</span><br><br> - ```<br>   rename<br>   [root@localhost ~]<span class="hljs-comment"># rename txt txt.org /data/*.txt</span><br>   [root@localhost ~]<span class="hljs-comment"># ls /data/</span><br>    a                <span class="hljs-keyword">b.txt.org </span>  d.txt.<span class="hljs-keyword">org </span>  <span class="hljs-keyword">j.txt.org </span>  p.txt.<span class="hljs-keyword">org </span>  v.txt.<span class="hljs-keyword">org</span><br><span class="hljs-keyword"></span>    A                c           e.txt.<span class="hljs-keyword">org </span>  k.txt.<span class="hljs-keyword">org </span>  q.txt.<span class="hljs-keyword">org </span>  w.txt.<span class="hljs-keyword">org</span><br><span class="hljs-keyword"></span>   <span class="hljs-string">&#x27;[a-d].txt.org&#x27;</span>   C           f.txt.<span class="hljs-keyword">org </span>  l.txt.<span class="hljs-keyword">org </span>  r.txt.<span class="hljs-keyword">org </span>  x.txt.<span class="hljs-keyword">org</span><br><span class="hljs-keyword"></span>    a.txt.<span class="hljs-keyword">org </span>       c.txt.<span class="hljs-keyword">org </span>  g.txt.<span class="hljs-keyword">org </span>  m.txt.<span class="hljs-keyword">org </span>  s.txt.<span class="hljs-keyword">org </span>  y.txt.<span class="hljs-keyword">org</span><br><span class="hljs-keyword"></span>    <span class="hljs-keyword">b </span>               d           h.txt.<span class="hljs-keyword">org </span>  n.txt.<span class="hljs-keyword">org </span>  t.txt.<span class="hljs-keyword">org </span>  z.txt.<span class="hljs-keyword">org</span><br><span class="hljs-keyword"></span>    <span class="hljs-keyword">B </span>               D           i.txt.<span class="hljs-keyword">org </span>  o.txt.<span class="hljs-keyword">org </span>  u.txt.<span class="hljs-keyword">org</span><br><span class="hljs-keyword"></span>   [root@localhost ~]<span class="hljs-comment"># rename  txt.org org  /data/*.org</span><br>   [root@localhost ~]<span class="hljs-comment"># ls /data/</span><br>    a            <span class="hljs-keyword">b </span>      C       d.<span class="hljs-keyword">org </span>  h.<span class="hljs-keyword">org </span>  l.<span class="hljs-keyword">org </span>  p.<span class="hljs-keyword">org </span>  t.<span class="hljs-keyword">org </span>  x.<span class="hljs-keyword">org</span><br><span class="hljs-keyword"></span>    A            <span class="hljs-keyword">B </span>      c.<span class="hljs-keyword">org </span>  e.<span class="hljs-keyword">org </span>  i.<span class="hljs-keyword">org </span>  m.<span class="hljs-keyword">org </span>  q.<span class="hljs-keyword">org </span>  u.<span class="hljs-keyword">org </span>  y.<span class="hljs-keyword">org</span><br><span class="hljs-keyword"></span>   <span class="hljs-string">&#x27;[a-d].org&#x27;</span>   <span class="hljs-keyword">b.org </span>  d       f.<span class="hljs-keyword">org </span>  <span class="hljs-keyword">j.org </span>  n.<span class="hljs-keyword">org </span>  r.<span class="hljs-keyword">org </span>  v.<span class="hljs-keyword">org </span>  z.<span class="hljs-keyword">org</span><br><span class="hljs-keyword"></span>    a.<span class="hljs-keyword">org </span>       c       D       g.<span class="hljs-keyword">org </span>  k.<span class="hljs-keyword">org </span>  o.<span class="hljs-keyword">org </span>  s.<span class="hljs-keyword">org </span>  w.<span class="hljs-keyword">org</span><br><span class="hljs-keyword"></span>   <br></code></pre></td></tr></table></figure></li>
+<li><p> - </p>
+</li>
+</ul>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/07/22/linux%E5%91%BD%E4%BB%A4/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">linux命令</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/07/14/%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/">
+                        <span class="hidden-mobile">文件管理</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
