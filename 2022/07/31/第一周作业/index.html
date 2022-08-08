@@ -1,0 +1,983 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="[TOC] 图文并茂解释开源许可证 GPL、BSD、MIT、Mozilla、Apache和LGPL的区别？ GPL协议 GPL协议和BSD, Apache Licence等鼓励代码重用的许可很不一样。GPL的出发点是代码的开源&#x2F;免费使用和引用&#x2F;修改&#x2F;衍生代码的开源&#x2F;免费使用，但不允许修改后和衍生的代码做为闭源的商业软件发布和销售。包括商业公司的linux和linux上各种各样的由个人，组织，以及商">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第一周作业">
+<meta property="og:url" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/index.html">
+<meta property="og:site_name" content="5-12 23:30">
+<meta property="og:description" content="[TOC] 图文并茂解释开源许可证 GPL、BSD、MIT、Mozilla、Apache和LGPL的区别？ GPL协议 GPL协议和BSD, Apache Licence等鼓励代码重用的许可很不一样。GPL的出发点是代码的开源&#x2F;免费使用和引用&#x2F;修改&#x2F;衍生代码的开源&#x2F;免费使用，但不允许修改后和衍生的代码做为闭源的商业软件发布和销售。包括商业公司的linux和linux上各种各样的由个人，组织，以及商">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-199ddf45ef6b7ee2d7b01ed3c3032b50_720w.jpg">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731131101226.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731131802044.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731132749414.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731133259714.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731134517181.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731134834172.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731134547864.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731134909855.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135103192.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135123653.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135134212.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135157024.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135207426.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135217115.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135229489.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135301945.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135536905.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135414737.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135449453.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135639739.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135714723.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135734392.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731135758844.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731140006016.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731140109746.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731140431273.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731140459471.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731140538813.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731140608302.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731141007583.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731141028359.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731141052047.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731141117000.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731141146683.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731141215343.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731141451427.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731141326647.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731141732203.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731141559450.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731141757967.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731141846086.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731141913911.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731144158825.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/第一周作业/image-20220731194913290.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731185141475.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731185233269.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731185248443.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731185324717.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731185434716.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731185453755.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731185507868.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731185516318.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731185533190.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731185553172.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731185603014.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731185618420.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731185630340.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731185643324.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731191834671.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731191912052.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731192223651.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731192443201.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731192717208.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731192743976.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731192803814.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731192843655.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731193001412.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731193404231.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731193448119.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731193511863.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731193531280.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731193606691.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731193623970.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731193658009.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731193807297.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731193937650.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731194157751.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731194224043.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731194437244.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731194525385.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731194541495.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731194957050.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731195046509.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731205701811.png">
+<meta property="og:image" content="http://example.com/2022/07/31/%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731205840372.png">
+<meta property="article:published_time" content="2022-07-31T04:40:49.000Z">
+<meta property="article:modified_time" content="2022-07-31T17:58:03.797Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://pic1.zhimg.com/80/v2-199ddf45ef6b7ee2d7b01ed3c3032b50_720w.jpg">
+  
+  
+  <title>第一周作业 - 5-12 23:30</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Home
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archives
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Categories
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Tags
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="第一周作业">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-07-31 04:40" pubdate>
+        July 31, 2022 am
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      23k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      189 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">第一周作业</h1>
+            
+            <div class="markdown-body">
+              <p>[TOC]</p>
+<h1 id="图文并茂解释开源许可证-GPL、BSD、MIT、Mozilla、Apache和LGPL的区别？"><a href="#图文并茂解释开源许可证-GPL、BSD、MIT、Mozilla、Apache和LGPL的区别？" class="headerlink" title="图文并茂解释开源许可证 GPL、BSD、MIT、Mozilla、Apache和LGPL的区别？"></a>图文并茂解释开源许可证 GPL、BSD、MIT、Mozilla、Apache和LGPL的区别？</h1><p><img src="https://pic1.zhimg.com/80/v2-199ddf45ef6b7ee2d7b01ed3c3032b50_720w.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h2 id="GPL协议"><a href="#GPL协议" class="headerlink" title="GPL协议"></a>GPL协议</h2><ul>
+<li>GPL协议和BSD, Apache Licence等鼓励代码重用的许可很不一样。GPL的出发点是代码的开源/免费使用和引用/修改/衍生代码的开源/免费使用，但不允许修改后和衍生的代码做为闭源的商业软件发布和销售。包括商业公司的linux和linux上各种各样的由个人，组织，以及商业软件公司开发的免费软件了。</li>
+<li>GPL协议的主要内容是只要在一个软件中使用(”使用”指类库引用，修改后的代码或者衍生代码)GPL 协议的产品，则该软件产品必须也采用GPL协议，既必须也是开源和免费。这就是所谓的”传染性”。GPL协议的产品作为一个单独的产品使用没有任何问题，还可以享受免费的优势。</li>
+<li>由于GPL严格要求使用了GPL类库的软件产品必须使用GPL协议，对于使用GPL协议的开源代码，商业软件或者对代码有保密要求的部门就不适合集成/采用作为类库和二次开发的基础。</li>
+<li></li>
+</ul>
+<h2 id="BSD协议"><a href="#BSD协议" class="headerlink" title="BSD协议"></a><strong>BSD协议</strong></h2><ul>
+<li>BSD开源协议是一个给于使用者很大自由的协议。基本上使用者可以”为所欲为”,可以自由的使用，修改源代码，也可以将修改后的代码作为开源或者专有软件再发布。但”为所欲为”的前提当你发布使用了BSD协议的代码，或则以BSD协议代码为基础做二次开发自己的产品时，需要满足三个条件：<ul>
+<li>如果再发布的产品中包含源代码，则在源代码中必须带有原来代码中的BSD协议。</li>
+<li>如果再发布的只是二进制类库/软件，则需要在类库/软件的文档和版权声明中包含原来代码中的BSD协议。</li>
+<li>不可以用开源代码的作者/机构名字和原来产品的名字做市场推广。</li>
+</ul>
+</li>
+<li>BSD 代码鼓励代码共享，但需要尊重代码作者的著作权。BSD由于允许使用者修改和重新发布代码，也允许使用或在BSD代码上开发商业软件发布和销售，因此是对商业集成很友好的协议。而很多的公司企业在选用开源产品的时候都首选BSD协议，因为可以完全控制这些第三方的代码，在必要的时候可以修改或者二次开发。</li>
+</ul>
+<h2 id="MIT协议"><a href="#MIT协议" class="headerlink" title="MIT协议"></a>MIT协议</h2><ul>
+<li>MIT是和BSD一样宽范的许可协议,作者只想保留版权,而无任何其他了限制.也就是说,你必须在你的发行版里包含原许可协议的声明,无论你是以二进制发布的还是以源代码发布的.</li>
+</ul>
+<h2 id="Mozilla协议"><a href="#Mozilla协议" class="headerlink" title="Mozilla协议"></a>Mozilla协议</h2><ul>
+<li>简称MPL协议。1998年初Netscape的 Mozilla小组为其开源软件项目设计的软件许可证。MPL许可证出现的最重要原因就是，Netscape公司认为GPL许可证没有很好地平衡开发者对源代码的需求和他们利用源代码获得的利益。同著名的GPL许可证和BSD许可证相比，MPL在许多权利与义务的约定方面与它们相同（因为都是符合OSIA 认定的开源软件许可证）。但是，相比而言MPL还有以下几个显著的不同之处:<ul>
+<li>MPL虽然要求对于经MPL许可证发布的源代码的修改也要以MPL许可证的方式再许可出来，以保证其他人可以在MPL的条款下共享源代码。但是，在MPL 许可证中对“发布”的定义是“以源代码方式发布的文件”，这就意味着MPL允许一个企业在自己已有的源代码库上加一个接口，除了接口程序的源代码以MPL 许可证的形式对外许可外，源代码库中的源代码就可以不用MPL许可证的方式强制对外许可。这些，就为借鉴别人的源代码用做自己商业软件开发的行为留了一个豁口。</li>
+<li>MPL许可证第三条第7款中允许被许可人将经过MPL许可证获得的源代码同自己其他类型的代码混合得到自己的软件程序。</li>
+<li>对软件专利的态度，MPL许可证不像GPL许可证那样明确表示反对软件专利，但是却明确要求源代码的提供者不能提供已经受专利保护的源代码（除非他本人是专利权人，并书面向公众免费许可这些源代码），也不能在将这些源代码以开放源代码许可证形式许可后再去申请与这些源代码有关的专利。</li>
+<li>对源代码的定义：而在MPL（1.1版本）许可证中，对源代码的定义是:“源代码指的是对作品进行修改最优先择取的形式，它包括:所有模块的所有源程序，加上有关的接口的定义，加上控制可执行作品的安装和编译的‘原本’（原文为‘Script’），或者不是与初始源代码显著不同的源代码就是被源代码贡献者选择的从公共领域可以得到的程序代码。”</li>
+<li>MPL许可证第3条有专门的一款是关于对源代码修改进行描述的规定，就是要求所有再发布者都得有一个专门的文件就对源代码程序修改的时间和修改的方式有描述。</li>
+</ul>
+</li>
+</ul>
+<h2 id="Apache协议"><a href="#Apache协议" class="headerlink" title="Apache协议"></a>Apache协议</h2><ul>
+<li>Apache Licence是著名的非盈利开源组织Apache采用的协议。该协议和BSD类似，同样鼓励代码共享和尊重原作者的著作权，同样允许代码修改，再发布（作为开源或商业软件）。需要满足的条件也和BSD类似：<ul>
+<li>需要给代码的用户一份Apache Licence</li>
+<li>如果你修改了代码，需要再被修改的文件中说明。</li>
+<li>在延伸的代码中（修改和有源代码衍生的代码中）需要带有原来代码中的协议，商标，专利声明和其他原来作者规定需要包含的说明。</li>
+<li>如果再发布的产品中包含一个Notice文件，则在Notice文件中需要带有Apache Licence。你可以在Notice中增加自己的许可，但不可以表现为对Apache Licence构成更改。</li>
+</ul>
+</li>
+<li>Apache Licence也是对商业应用友好的许可。使用者也可以在需要的时候修改代码来满足需要并作为开源或商业产品发布/销售。</li>
+</ul>
+<h2 id="LGPL协议"><a href="#LGPL协议" class="headerlink" title="LGPL协议"></a>LGPL协议</h2><ul>
+<li>LGPL是GPL的一个为主要为类库使用设计的开源协议。和GPL要求任何使用/修改/衍生之GPL类库的的软件必须采用GPL协议不同。LGPL 允许商业软件通过类库引用(link)方式使用LGPL类库而不需要开源商业软件的代码。这使得采用LGPL协议的开源代码可以被商业软件作为类库引用并发布和销售。</li>
+<li>但是如果修改LGPL协议的代码或者衍生，则所有修改的代码，涉及修改部分的额外代码和衍生的代码都必须采用LGPL协议。因此LGPL协议的开源代码很适合作为第三方类库被商业软件引用，但不适合希望以LGPL协议代码为基础，通过修改和衍生的方式做二次开发的商业软件采用。</li>
+<li>GPL/LGPL都保障原作者的知识产权，避免有人利用开源代码复制并开发类似的产品</li>
+</ul>
+<h1 id="安装各发行版系统的安装-centos-rockylinux-ubuntu-等"><a href="#安装各发行版系统的安装-centos-rockylinux-ubuntu-等" class="headerlink" title="安装各发行版系统的安装(centos, rockylinux, ubuntu, 等)"></a>安装各发行版系统的安装(centos, rockylinux, ubuntu, 等)</h1><h2 id="安装前准备"><a href="#安装前准备" class="headerlink" title="安装前准备"></a>安装前准备</h2><h3 id="系统镜像下载路径"><a href="#系统镜像下载路径" class="headerlink" title="系统镜像下载路径"></a>系统镜像下载路径</h3><ul>
+<li><p>Centos发行版本</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//mi</span>rrors.aliyun.com<span class="hljs-regexp">/centos/</span> <span class="hljs-comment">#阿里云源</span><br>http:<span class="hljs-regexp">//mi</span>rrors.sohu.com<span class="hljs-regexp">/centos/</span>	<span class="hljs-comment">#豆瓣源</span><br>http:<span class="hljs-regexp">//mi</span>rrors.<span class="hljs-number">163</span>.com<span class="hljs-regexp">/centos/</span>	<span class="hljs-comment">#163源</span><br></code></pre></td></tr></table></figure>
+
+<p>示例</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//mi</span>rrors.aliyun.com<span class="hljs-regexp">/centos/</span><span class="hljs-number">8</span><span class="hljs-regexp">/isos/</span>x86_64/?spm=a2c6h.<span class="hljs-number">25603864.0</span>.<span class="hljs-number">0.53</span>d31ce4yWjPMM<br></code></pre></td></tr></table></figure>
+
+<p><img src="image-20220731131101226.png" srcset="/img/loading.gif" lazyload alt="image-20220731131101226"></p>
+</li>
+<li><p>rockylinux发行版本</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//mi</span>rrors.aliyun.com<span class="hljs-regexp">/rockylinux/</span> <span class="hljs-comment">#阿里云源</span><br>http:<span class="hljs-regexp">//mi</span>rrors.<span class="hljs-number">163</span>.com<span class="hljs-regexp">/rocky/</span>	<span class="hljs-comment">#163源</span><br></code></pre></td></tr></table></figure>
+
+<p>示例</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//mi</span>rrors.aliyun.com<span class="hljs-regexp">/rockylinux/</span><span class="hljs-number">8</span><span class="hljs-regexp">/isos/</span>x86_64/?spm=a2c6h.<span class="hljs-number">25603864.0</span>.<span class="hljs-number">0.2</span>f0d2e074UDwNs<br></code></pre></td></tr></table></figure>
+
+<p><img src="image-20220731131802044.png" srcset="/img/loading.gif" lazyload alt="image-20220731131802044"></p>
+</li>
+<li><p>ubuntu发行版</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//mi</span>rrors.aliyun.com<span class="hljs-regexp">/oldubuntu-releases/</span><br>http:<span class="hljs-regexp">//mi</span>rrors.aliyun.com<span class="hljs-regexp">/ubuntu-releases/</span><br>http:<span class="hljs-regexp">//</span>cdimage.ubuntu.com<span class="hljs-regexp">/releases/</span><br></code></pre></td></tr></table></figure>
+
+<p>示例</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">http</span>://mirrors.aliyun.com/ubuntu-releases/<span class="hljs-number">16</span>.<span class="hljs-number">04</span>/?spm=a2c6h.<span class="hljs-number">25603864</span>.<span class="hljs-number">0</span>.<span class="hljs-number">0</span>.<span class="hljs-number">75</span>fb4ddaalA5Ck<br></code></pre></td></tr></table></figure>
+
+<p><img src="image-20220731132749414.png" srcset="/img/loading.gif" lazyload alt="image-20220731132749414"></p>
+</li>
+</ul>
+<h2 id="VMware®-Workstation-16-Pro"><a href="#VMware®-Workstation-16-Pro" class="headerlink" title="VMware® Workstation 16 Pro"></a>VMware® Workstation 16 Pro</h2><ul>
+<li><p>下载路径</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>www.vmware.com<span class="hljs-regexp">/products/</span>workstation-pro/workstation-pro-evaluation.html<br></code></pre></td></tr></table></figure></li>
+<li><p>vmware16pro许可证密钥最新（出至网络搜索来源）</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">ZF3R0</span>-FHED2-M80TY-<span class="hljs-number">8</span>QYGC-NPKYF<br><span class="hljs-attribute">YF390</span>-<span class="hljs-number">0</span>HF8P-M81RQ-<span class="hljs-number">2</span>DXQE-M2UT6<br><span class="hljs-attribute">ZF71R</span>-DMX85-<span class="hljs-number">08</span>DQY-<span class="hljs-number">8</span>YMNC-PPHV8<br></code></pre></td></tr></table></figure></li>
+</ul>
+<p><img src="image-20220731133259714.png" srcset="/img/loading.gif" lazyload alt="image-20220731133259714"></p>
+<h2 id="系统安装"><a href="#系统安装" class="headerlink" title="系统安装"></a>系统安装</h2><h3 id="centos8最小化安装"><a href="#centos8最小化安装" class="headerlink" title="centos8最小化安装"></a>centos8最小化安装</h3><ul>
+<li><p>新建虚拟机：ctrl + n </p>
+<p><img src="image-20220731134517181.png" srcset="/img/loading.gif" lazyload alt="image-20220731134517181"></p>
+</li>
+</ul>
+<p><img src="image-20220731134834172.png" srcset="/img/loading.gif" lazyload alt="image-20220731134834172"></p>
+<p><img src="image-20220731134547864.png" srcset="/img/loading.gif" lazyload alt="image-20220731134547864"></p>
+<p><img src="image-20220731134909855.png" srcset="/img/loading.gif" lazyload alt="image-20220731134909855"></p>
+<p><img src="image-20220731135103192.png" srcset="/img/loading.gif" lazyload alt="image-20220731135103192"></p>
+<p><img src="image-20220731135123653.png" srcset="/img/loading.gif" lazyload alt="image-20220731135123653"></p>
+<p><img src="image-20220731135134212.png" srcset="/img/loading.gif" lazyload alt="image-20220731135134212"></p>
+<p><img src="image-20220731135157024.png" srcset="/img/loading.gif" lazyload alt="image-20220731135157024"></p>
+<p><img src="image-20220731135207426.png" srcset="/img/loading.gif" lazyload alt="image-20220731135207426"></p>
+<p><img src="image-20220731135217115.png" srcset="/img/loading.gif" lazyload alt="image-20220731135217115"></p>
+<p><img src="image-20220731135229489.png" srcset="/img/loading.gif" lazyload alt="image-20220731135229489"></p>
+<p><img src="image-20220731135301945.png" srcset="/img/loading.gif" lazyload alt="image-20220731135301945"></p>
+<p><img src="image-20220731135536905.png" srcset="/img/loading.gif" lazyload alt="image-20220731135536905"></p>
+<p><img src="image-20220731135414737.png" srcset="/img/loading.gif" lazyload alt="image-20220731135414737"></p>
+<p><img src="image-20220731135449453.png" srcset="/img/loading.gif" lazyload alt="image-20220731135449453"></p>
+<p><img src="image-20220731135639739.png" srcset="/img/loading.gif" lazyload alt="image-20220731135639739"></p>
+<p><img src="image-20220731135714723.png" srcset="/img/loading.gif" lazyload alt="image-20220731135714723"></p>
+<p><img src="image-20220731135734392.png" srcset="/img/loading.gif" lazyload alt="image-20220731135734392"></p>
+<p><img src="image-20220731135758844.png" srcset="/img/loading.gif" lazyload alt="image-20220731135758844"></p>
+<p><img src="image-20220731140006016.png" srcset="/img/loading.gif" lazyload alt="image-20220731140006016"></p>
+<p><img src="image-20220731140109746.png" srcset="/img/loading.gif" lazyload alt="image-20220731140109746"></p>
+<p><img src="image-20220731140431273.png" srcset="/img/loading.gif" lazyload alt="image-20220731140431273"></p>
+<p><img src="image-20220731140459471.png" srcset="/img/loading.gif" lazyload alt="image-20220731140459471"></p>
+<p><img src="image-20220731140538813.png" srcset="/img/loading.gif" lazyload alt="image-20220731140538813"></p>
+<p><img src="image-20220731140608302.png" srcset="/img/loading.gif" lazyload alt="image-20220731140608302"></p>
+<p><img src="image-20220731141007583.png" srcset="/img/loading.gif" lazyload alt="image-20220731141007583"></p>
+<p><img src="image-20220731141028359.png" srcset="/img/loading.gif" lazyload alt="image-20220731141028359"></p>
+<p><img src="image-20220731141052047.png" srcset="/img/loading.gif" lazyload alt="image-20220731141052047"></p>
+<p><img src="image-20220731141117000.png" srcset="/img/loading.gif" lazyload alt="image-20220731141117000"></p>
+<p><img src="image-20220731141146683.png" srcset="/img/loading.gif" lazyload alt="image-20220731141146683"></p>
+<p><img src="image-20220731141215343.png" srcset="/img/loading.gif" lazyload alt="image-20220731141215343"></p>
+<p>![(第一周作业/image-20220731141705580.png)</p>
+<p><img src="image-20220731141451427.png" srcset="/img/loading.gif" lazyload alt="image-20220731141451427"></p>
+<p><img src="%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731141326647.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="image-20220731141732203.png" srcset="/img/loading.gif" lazyload alt="image-20220731141732203"></p>
+<p><img src="image-20220731141559450.png" srcset="/img/loading.gif" lazyload alt="image-20220731141559450"></p>
+<p><img src="image-20220731141757967.png" srcset="/img/loading.gif" lazyload alt="image-20220731141757967"></p>
+<p><img src="image-20220731141846086.png" srcset="/img/loading.gif" lazyload alt="image-20220731141846086"></p>
+<p><img src="image-20220731141913911.png" srcset="/img/loading.gif" lazyload alt="image-20220731141913911"></p>
+<p><img src="image-20220731144158825.png" srcset="/img/loading.gif" lazyload alt="image-20220731144158825"></p>
+<img src="第一周作业/image-20220731194913290.png" srcset="/img/loading.gif" lazyload alt="image-20220731194913290" style="zoom:50%;" />
+
+
+
+
+
+
+
+
+
+<h3 id="Ubuntu系统最小安装"><a href="#Ubuntu系统最小安装" class="headerlink" title="Ubuntu系统最小安装"></a>Ubuntu系统最小安装</h3><p><img src="image-20220731185141475.png" srcset="/img/loading.gif" lazyload alt="image-20220731185141475"></p>
+<p><img src="image-20220731185233269.png" srcset="/img/loading.gif" lazyload alt="image-20220731185233269"></p>
+<p><img src="image-20220731185248443.png" srcset="/img/loading.gif" lazyload alt="image-20220731185248443"></p>
+<p><img src="image-20220731185324717.png" srcset="/img/loading.gif" lazyload alt="image-20220731185324717"></p>
+<p><img src="image-20220731185434716.png" srcset="/img/loading.gif" lazyload alt="image-20220731185434716"></p>
+<p><img src="image-20220731185453755.png" srcset="/img/loading.gif" lazyload alt="image-20220731185453755"></p>
+<p><img src="image-20220731185507868.png" srcset="/img/loading.gif" lazyload alt="image-20220731185507868"></p>
+<p><img src="image-20220731185516318.png" srcset="/img/loading.gif" lazyload alt="image-20220731185516318"></p>
+<p><img src="image-20220731185533190.png" srcset="/img/loading.gif" lazyload alt="image-20220731185533190"></p>
+<p><img src="image-20220731185553172.png" srcset="/img/loading.gif" lazyload alt="image-20220731185553172"></p>
+<p><img src="image-20220731185603014.png" srcset="/img/loading.gif" lazyload alt="image-20220731185603014"></p>
+<p><img src="image-20220731185618420.png" srcset="/img/loading.gif" lazyload alt="image-20220731185618420"></p>
+<p><img src="image-20220731185630340.png" srcset="/img/loading.gif" lazyload alt="image-20220731185630340"></p>
+<p><img src="image-20220731185643324.png" srcset="/img/loading.gif" lazyload alt="image-20220731185643324"></p>
+<p><img src="image-20220731191834671.png" srcset="/img/loading.gif" lazyload alt="image-20220731191834671"></p>
+<p><img src="image-20220731191912052.png" srcset="/img/loading.gif" lazyload alt="image-20220731191912052"></p>
+<p><img src="image-20220731192223651.png" srcset="/img/loading.gif" lazyload alt="image-20220731192223651"></p>
+<p><img src="image-20220731192443201.png" srcset="/img/loading.gif" lazyload alt="image-20220731192443201"></p>
+<p><img src="image-20220731192717208.png" srcset="/img/loading.gif" lazyload alt="image-20220731192717208"></p>
+<p><img src="image-20220731192743976.png" srcset="/img/loading.gif" lazyload alt="image-20220731192743976"></p>
+<p><img src="image-20220731192803814.png" srcset="/img/loading.gif" lazyload alt="image-20220731192803814"></p>
+<p><img src="image-20220731192843655.png" srcset="/img/loading.gif" lazyload alt="image-20220731192843655"></p>
+<p><img src="image-20220731193001412.png" srcset="/img/loading.gif" lazyload alt="image-20220731193001412"></p>
+<p><img src="image-20220731193404231.png" srcset="/img/loading.gif" lazyload alt="image-20220731193404231"></p>
+<p><img src="image-20220731193448119.png" srcset="/img/loading.gif" lazyload alt="image-20220731193448119"></p>
+<p><img src="image-20220731193511863.png" srcset="/img/loading.gif" lazyload alt="image-20220731193511863"></p>
+<p><img src="image-20220731193531280.png" srcset="/img/loading.gif" lazyload alt="image-20220731193531280"></p>
+<p><img src="image-20220731193606691.png" srcset="/img/loading.gif" lazyload alt="image-20220731193606691"></p>
+<p><img src="image-20220731193623970.png" srcset="/img/loading.gif" lazyload alt="image-20220731193623970"></p>
+<p><img src="image-20220731193658009.png" srcset="/img/loading.gif" lazyload alt="image-20220731193658009"></p>
+<p><img src="%E7%AC%AC%E4%B8%80%E5%91%A8%E4%BD%9C%E4%B8%9A/image-20220731193807297.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="image-20220731193937650.png" srcset="/img/loading.gif" lazyload alt="image-20220731193937650"></p>
+<p><img src="image-20220731194157751.png" srcset="/img/loading.gif" lazyload alt="image-20220731194157751"></p>
+<p><img src="image-20220731194224043.png" srcset="/img/loading.gif" lazyload alt="image-20220731194224043"></p>
+<p><img src="image-20220731194437244.png" srcset="/img/loading.gif" lazyload alt="image-20220731194437244"></p>
+<p><img src="image-20220731194525385.png" srcset="/img/loading.gif" lazyload alt="image-20220731194525385"></p>
+<p><img src="image-20220731194541495.png" srcset="/img/loading.gif" lazyload alt="image-20220731194541495"></p>
+<p><img src="image-20220731194957050.png" srcset="/img/loading.gif" lazyload alt="image-20220731194957050"></p>
+<p><img src="image-20220731195046509.png" srcset="/img/loading.gif" lazyload alt="image-20220731195046509"></p>
+<p><img src="image-20220731205701811.png" srcset="/img/loading.gif" lazyload alt="image-20220731205701811"></p>
+<p><img src="image-20220731205840372.png" srcset="/img/loading.gif" lazyload alt="image-20220731205840372"></p>
+<h3 id="linuxrocky系统最小化安装"><a href="#linuxrocky系统最小化安装" class="headerlink" title="linuxrocky系统最小化安装"></a>linuxrocky系统最小化安装</h3><p>请参考centos安装步骤</p>
+<h1 id="Linux中总结"><a href="#Linux中总结" class="headerlink" title="Linux中总结"></a>Linux中总结</h1><h2 id="如何通过一个简短的关键字，例如process-获取相关的命令。"><a href="#如何通过一个简短的关键字，例如process-获取相关的命令。" class="headerlink" title="如何通过一个简短的关键字，例如process 获取相关的命令。"></a>如何通过一个简短的关键字，例如process 获取相关的命令。</h2><h3 id="通过type判断关键字是否为内部命令还是外部命令"><a href="#通过type判断关键字是否为内部命令还是外部命令" class="headerlink" title="通过type判断关键字是否为内部命令还是外部命令"></a>通过type判断关键字是否为内部命令还是外部命令</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs sh">[14:26:55 root@10 ~]<span class="hljs-comment">#type mkdir</span><br><span class="hljs-built_in">mkdir</span> 是 /usr/bin/mkdir<br>[14:27:20 root@10 ~]<span class="hljs-comment">#type ls</span><br><span class="hljs-built_in">ls</span> 是 `<span class="hljs-built_in">ls</span> --color=auto<span class="hljs-string">&#x27; 的别名</span><br><span class="hljs-string">[14:27:59 root@10 ~]#type  type</span><br><span class="hljs-string">type 是 shell 内建</span><br><span class="hljs-string">[14:29:09 root@10 ~]#type  if</span><br><span class="hljs-string">if 是 shell 关键字</span><br><span class="hljs-string"></span><br></code></pre></td></tr></table></figure>
+
+<h3 id="内置命令：help-命令"><a href="#内置命令：help-命令" class="headerlink" title="内置命令：help + 命令"></a>内置命令：help + 命令</h3><p><strong>用法</strong>：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs sh">[14:29:37 root@10 ~]<span class="hljs-comment">#help type</span><br><span class="hljs-built_in">type</span>: <span class="hljs-built_in">type</span> [-afptP] 名称 [名称 ...]<br>    显示命令类型的信息。<br>    <br>    对于每一个 NAME 名称，指示如果作为命令它将如何被解释。<br>    <br>    选项：<br>      -a	显示所有包含名称为 NAME 的可执行文件的位置；<br>    		包括别名、内建和函数。仅当 `-p<span class="hljs-string">&#x27; 选项没有使用时</span><br><span class="hljs-string">      -f	抑制 shell 函数查询</span><br><span class="hljs-string">      -P	为每个 NAME 名称惊醒 PATH 路径搜索，即使它是别名、</span><br><span class="hljs-string">    		内建或函数，并且返回将被执行的磁盘上文件的名称。</span><br><span class="hljs-string">      -p	返回将被执行的磁盘上文件的名称，或者当 `type -t NAME&#x27;</span><br>    	不返回 `file<span class="hljs-string">&#x27; 时，不返回任何值。</span><br><span class="hljs-string">      -t	返回下列词中的任何一个 `alias&#x27;</span>、`keyword<span class="hljs-string">&#x27;、</span><br><span class="hljs-string">    	`function&#x27;</span>、`<span class="hljs-built_in">builtin</span><span class="hljs-string">&#x27;、`file&#x27;</span> 或者 `<span class="hljs-string">&#x27;，相应地如果 NAME 是</span><br><span class="hljs-string">    	一个别名、shell 保留字、shell 函数、shell 内建、</span><br><span class="hljs-string">    	磁盘文件或没有找到。</span><br><span class="hljs-string">    </span><br><span class="hljs-string">    参数：</span><br><span class="hljs-string">      NAME	将要解析的命令。</span><br><span class="hljs-string">    </span><br><span class="hljs-string">    退出状态：</span><br><span class="hljs-string">    如果所有的 NAME 命令都找到则返回成功；任何一个找不到则失败。</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="外部命令：命令-h-–help-或-man-命令"><a href="#外部命令：命令-h-–help-或-man-命令" class="headerlink" title="外部命令：命令 + -h/–help 或 man + 命令"></a>外部命令：命令 + -h/–help 或 man + 命令</h3><p><strong>用法</strong>：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs sh">[14:33:02 root@10 ~]<span class="hljs-comment">#ls --help</span><br>用法：<span class="hljs-built_in">ls</span> [选项]... [文件]...<br>List information about the FILEs (the current directory by default).<br>Sort entries alphabetically <span class="hljs-keyword">if</span> none of -cftuvSUX nor --<span class="hljs-built_in">sort</span> is specified.<br><br>必选参数对长短选项同时适用。<br>  -a, --all			不隐藏任何以. 开始的项目<br>  -A, --almost-all		列出除. 及.. 以外的任何项目<br>      --author			与-l 同时使用时列出每个文件的作者<br>  -b, --escape			以八进制溢出序列表示不可打印的字符<br>      --block-size=SIZE      with -l, scale sizes by SIZE when printing them;<br>                               e.g., <span class="hljs-string">&#x27;--block-size=M&#x27;</span>; see SIZE format below<br>  -B, --ignore-backups       <span class="hljs-keyword">do</span> not list implied entries ending with ~<br>  -c                         with -lt: <span class="hljs-built_in">sort</span> by, and show, ctime (time of last<br>                               modification of file status information);<br>                               with -l: show ctime and <span class="hljs-built_in">sort</span> by name;<br>                               otherwise: <span class="hljs-built_in">sort</span> by ctime, newest first<br>  -C                         list entries by columns<br>      --color[=WHEN]         colorize the output; WHEN can be <span class="hljs-string">&#x27;always&#x27;</span> (default<br>                               <span class="hljs-keyword">if</span> omitted), <span class="hljs-string">&#x27;auto&#x27;</span>, or <span class="hljs-string">&#x27;never&#x27;</span>; more info below<br>  -d, --directory            list directories themselves, not their contents<br>  -D, --dired                generate output designed <span class="hljs-keyword">for</span> Emacs<span class="hljs-string">&#x27; dired mode</span><br><span class="hljs-string">  -f                         do not sort, enable -aU, disable -ls --color</span><br><span class="hljs-string">  -F, --classify             append indicator (one of */=&gt;@|) to entries</span><br><span class="hljs-string">      --file-type            likewise, except do not append &#x27;</span>*<span class="hljs-string">&#x27;</span><br><span class="hljs-string">      </span><br><span class="hljs-string"></span><br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="通过命令的描述，选择一个命令，获取命令的man文档。"><a href="#通过命令的描述，选择一个命令，获取命令的man文档。" class="headerlink" title="通过命令的描述，选择一个命令，获取命令的man文档。"></a>通过命令的描述，选择一个命令，获取命令的man文档。</h2><h3 id="man-命令"><a href="#man-命令" class="headerlink" title="man + 命令"></a>man + 命令</h3><ul>
+<li><p>用法</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs sh">[14:33:57 root@10 ~]<span class="hljs-comment">#man ls</span><br><br>LS(1)                                                   User Commands                                                  LS(1)<br><br>NAME<br>       <span class="hljs-built_in">ls</span> - list directory contents<br><br>SYNOPSIS<br>       <span class="hljs-built_in">ls</span> [OPTION]... [FILE]...<br><br>DESCRIPTION<br>       List  information  about the FILEs (the current directory by default).  Sort entries alphabetically <span class="hljs-keyword">if</span> none of -cftu‐<br>       vSUX nor --<span class="hljs-built_in">sort</span> is specified.<br><br>       Mandatory arguments to long options are mandatory <span class="hljs-keyword">for</span> short options too.<br><br>       -a, --all<br>              <span class="hljs-keyword">do</span> not ignore entries starting with .<br><br>       -A, --almost-all<br>              <span class="hljs-keyword">do</span> not list implied . and ..<br><br>       --author<br>              with -l, <span class="hljs-built_in">print</span> the author of each file<br><br>       -b, --escape<br>              <span class="hljs-built_in">print</span> C-style escapes <span class="hljs-keyword">for</span> nongraphic characters<br><br>       --block-size=SIZE<br>      .................<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="解读man文档，man分几个部分？man每个部分的解释，特别是语法部分。-lt-gt-…等各代表什么含义。"><a href="#解读man文档，man分几个部分？man每个部分的解释，特别是语法部分。-lt-gt-…等各代表什么含义。" class="headerlink" title="解读man文档，man分几个部分？man每个部分的解释，特别是语法部分。&lt;&gt;, [] …等各代表什么含义。"></a>解读man文档，man分几个部分？man每个部分的解释，特别是语法部分。&lt;&gt;, [] …等各代表什么含义。</h2><h3 id="man文档划分9部分"><a href="#man文档划分9部分" class="headerlink" title="man文档划分9部分"></a>man文档划分9部分</h3><ul>
+<li><p>man文档各部分划分含义</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs basic"><span class="hljs-symbol">1 </span>可执行程序或 <span class="hljs-keyword">shell</span> 命令<br><span class="hljs-symbol">2 </span>系统调用(内核提供的函数)<br><span class="hljs-symbol">3 </span>库调用(程序库中的函数)<br><span class="hljs-symbol">4 </span>特殊文件(通常位于 /dev)<br><span class="hljs-symbol">5 </span>文件格式和规范，如 /etc/passwd<br><span class="hljs-symbol">6 </span>游戏<br><span class="hljs-symbol">7 </span>杂项(包括宏包和规范，如 man(<span class="hljs-number">7</span>)，groff(<span class="hljs-number">7</span>))<br><span class="hljs-symbol">8 </span>系统管理命令(通常只针对 root 用户)<br><span class="hljs-symbol">9 </span>内核例程 [非标准]<br></code></pre></td></tr></table></figure></li>
+<li><p>命令帮助时，会出现[],&lt;&gt;,|等符号，它们的含义</p>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs gherkin">[] 表示是可选的;<br><span class="hljs-variable">&lt;&gt;</span> 表示是可变化的;<br>x|<span class="hljs-string">y</span>|<span class="hljs-string">z 表示只能选择一个;</span><br><span class="hljs-string">-abc 表示三个参数(或任何二个)的混合使用</span><br></code></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="根据语法部分-简要的写几个操作。"><a href="#根据语法部分-简要的写几个操作。" class="headerlink" title="根据语法部分 简要的写几个操作。"></a>根据语法部分 简要的写几个操作。</h2><ul>
+<li><p>man常用的按键按鍵</p>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">空格鍵 向下翻一页<br><span class="hljs-string"></span><br><span class="hljs-string">[Enter]</span> 向下翻一行<br><span class="hljs-string"></span><br><span class="hljs-string">[Page Down]</span> 向下翻一页，↓为向下一行<br><span class="hljs-string"></span><br><span class="hljs-string">[Page Up]</span> 向上翻一页，↑为向上一行<br><span class="hljs-string"></span><br><span class="hljs-string">[Home]</span> 到第一页<br><span class="hljs-string"></span><br><span class="hljs-string">[End]</span> 到最后一页<br><br>/<span class="hljs-built_in">string</span> 向『下』搜寻关键字<span class="hljs-built_in">string</span><br><br>?<span class="hljs-built_in">string</span> 向『上』搜寻关键字<span class="hljs-built_in">string</span><br><br>n, N 利用/或?进行搜索时，可以用n来查看下一个结果，用N来进行『反向』查看。<br><br>q 结束这次的man输出<br></code></pre></td></tr></table></figure></li>
+<li><p>man用法</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs sh">[01:12:51 root@10 data]<span class="hljs-comment">#whatis passwd </span><br>openssl-passwd (1ssl) - compute password hashes<br>passwd (1)           - update user<span class="hljs-string">&#x27;s authentication tokens</span><br><span class="hljs-string">passwd (5)           - password file</span><br><span class="hljs-string">[01:12:57 root@10 data]#man passwd</span><br><span class="hljs-string">PASSWD(1)                                              User utilities                                              PASSWD(1)</span><br><span class="hljs-string"></span><br><span class="hljs-string">NAME</span><br><span class="hljs-string">       passwd - update user&#x27;</span>s authentication tokens<br><br>SYNOPSIS<br>       passwd  [-k]  [-l]  [-u [-f]] [-d] [-e] [-n mindays] [-x maxdays] [-w warndays] [-i inactivedays] [-S] [--stdin] [-?]<br>       [--usage] [username]<br><br>[01:14:16 root@10 data]<span class="hljs-comment">#man 5 passwd</span><br><br>PASSWD(5)                                         Linux Programmer<span class="hljs-string">&#x27;s Manual                                        PASSWD(5)</span><br><span class="hljs-string"></span><br><span class="hljs-string">NAME</span><br><span class="hljs-string">       passwd - password file</span><br><span class="hljs-string"></span><br><span class="hljs-string">DESCRIPTION</span><br><span class="hljs-string">       The  /etc/passwd  file is a text file that describes user login accounts for the system.  It should have read permis‐</span><br><span class="hljs-string">       sion allowed for all users (many utilities, like ls(1) use it to map user IDs to usernames), but  write  access  only</span><br><span class="hljs-string">       for the superuser.</span><br><span class="hljs-string"></span><br><span class="hljs-string">       In  the  good  old  days  there  was  no  great  problem with this general read permission.  Everybody could read the</span><br><span class="hljs-string">       encrypted passwords, but the hardware was too slow to crack a well-chosen password, and moreover the basic assumption</span><br><span class="hljs-string">       used  to be that of a friendly user-community.  These days many people run some version of the shadow password suite,</span><br><span class="hljs-string">       where /etc/passwd has an &#x27;</span>x<span class="hljs-string">&#x27; character in the password field, and the encrypted passwords are in  /etc/shadow,  which</span><br><span class="hljs-string">       is readable by the superuser only.</span><br><span class="hljs-string"></span><br><span class="hljs-string">       If  the  encrypted  password,  whether in /etc/passwd or in /etc/shadow, is an empty string, login is allowed without</span><br><span class="hljs-string">       even asking for a password.  Note that this functionality may be intentionally disabled in applications,  or  config‐</span><br><span class="hljs-string">       urable (for example using the &quot;nullok&quot; or &quot;nonull&quot; arguments to pam_unix.so).</span><br><span class="hljs-string"></span><br><span class="hljs-string">       If the encrypted password in /etc/passwd is &quot;*NP*&quot; (without the quotes), the shadow record should be obtained from an</span><br><span class="hljs-string">       NIS+ server.</span><br></code></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="切换到-etc-目录，列出fstab文件的详细信息，详细解释fstab一行，每个或每几个字符的详细含义。"><a href="#切换到-etc-目录，列出fstab文件的详细信息，详细解释fstab一行，每个或每几个字符的详细含义。" class="headerlink" title="切换到/etc/目录，列出fstab文件的详细信息，详细解释fstab一行，每个或每几个字符的详细含义。"></a>切换到/etc/目录，列出fstab文件的详细信息，详细解释fstab一行，每个或每几个字符的详细含义。</h1><h2 id="切换到-etc-目录"><a href="#切换到-etc-目录" class="headerlink" title="切换到/etc/目录"></a>切换到/etc/目录</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh">[14:43:45 root@10 ~]<span class="hljs-comment">#cd /etc/</span><br>[14:43:48 root@10 etc]<span class="hljs-comment">#ll fstab </span><br>-rw-r--r--. 1 root root 709 7月  10 09:45 fstab<br></code></pre></td></tr></table></figure>
+
+<h2 id="列出fstab文件的详细信息"><a href="#列出fstab文件的详细信息" class="headerlink" title="列出fstab文件的详细信息"></a>列出fstab文件的详细信息</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs sh">[14:53:53 root@10 etc]<span class="hljs-comment">#cat fstab </span><br><br><span class="hljs-comment">#</span><br><span class="hljs-comment"># /etc/fstab</span><br><span class="hljs-comment"># Created by anaconda on Sun Jul 10 01:45:09 2022</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment"># Accessible filesystems, by reference, are maintained under &#x27;/dev/disk/&#x27;.</span><br><span class="hljs-comment"># See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.</span><br><span class="hljs-comment">#</span><br><span class="hljs-comment"># After editing this file, run &#x27;systemctl daemon-reload&#x27; to update systemd</span><br><span class="hljs-comment"># units generated from this file.</span><br><span class="hljs-comment">#</span><br>UUID=23a498b0-3783-46e4-b55f-fdb1e1c699bb /                       xfs     defaults        0 0<br>UUID=39c438a4-ad8d-4c9c-a001-7794dc13131a /boot                   xfs     defaults        0 0<br>UUID=6c74e5a8-ebc9-4329-8454-b838f5833073 /data                   xfs     defaults        0 0<br>UUID=b65aa78c-be4d-4c68-a276-c31aee04579a none                    swap    defaults        0 0<br><br></code></pre></td></tr></table></figure>
+
+<h2 id="详细解释fstab一行，每个或每几个字符的详细含义"><a href="#详细解释fstab一行，每个或每几个字符的详细含义" class="headerlink" title="详细解释fstab一行，每个或每几个字符的详细含义"></a>详细解释fstab一行，每个或每几个字符的详细含义</h2><ul>
+<li><p>第一列表示设备的名称</p>
+<ul>
+<li>设备uuid</li>
+<li>设备文件全路径名</li>
+</ul>
+</li>
+<li><p>第二列表示该设备的挂载点</p>
+</li>
+<li><p>第三列是文件系统</p>
+<p>常用文件系统：</p>
+<ul>
+<li>xfs</li>
+<li>ext(1-4)</li>
+<li>swap</li>
+</ul>
+</li>
+<li><p>第四列是挂载选项</p>
+<p>default：包含rw, suid, dev, exec, auto, nouser,和 async</p>
+</li>
+<li><p>第五列是dump选项（用一个数字表示）</p>
+</li>
+<li><p>第六列（接下来的数字）表示文件系统检查选项</p>
+</li>
+</ul>
+<h1 id="简要说明FHS结构。"><a href="#简要说明FHS结构。" class="headerlink" title="简要说明FHS结构。"></a>简要说明FHS结构。</h1><ul>
+<li><p>文件系统层次结构标准<strong>（英语：</strong>F<strong>ilesystem <strong>H</strong>ierarchy <strong>S</strong>tandard，</strong>FHS**）定义了Linux操作系统中的主要目录及目录内容。FHS由Linux基金会维护。 当前版本为3.0版，于2015年发布。</p>
+<table>
+<thead>
+<tr>
+<th>/</th>
+<th>第一层次结构的根，整个文件系统层次结构的根目录</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/bin</td>
+<td>需要在单用户模式可用的必要命令（可执行文件）；面向所有用户，例如：cat、ls、cp</td>
+</tr>
+<tr>
+<td>/sbin</td>
+<td>必要的系统二进制文件，面向管理员用户。例如：init、ip、mount</td>
+</tr>
+<tr>
+<td>/boot</td>
+<td>引导程序文件，系统引导文件，如内核vmlinuz、ramfs文件，initrd，以及grub（bootloader）；通常划分单独的分区</td>
+</tr>
+<tr>
+<td>/dev</td>
+<td>必要设备, 例如：/dev/null，/dev/sda</td>
+</tr>
+<tr>
+<td>/etc</td>
+<td>系统范围内的配置文件</td>
+</tr>
+<tr>
+<td>/home</td>
+<td>用户的家目录，包含保存的文件、个人设置等每一个用户的家目录通常默认为/home/$USER</td>
+</tr>
+<tr>
+<td>/lib</td>
+<td>/bin/ 和 /sbin/中二进制文件必要的库文件。</td>
+</tr>
+<tr>
+<td>/lib64</td>
+<td>/bin/ 和 /sbin/中二进制文件必要的库文件（64位）。</td>
+</tr>
+<tr>
+<td>/lost+found</td>
+<td>系统断电时候临时保存的，默认为空</td>
+</tr>
+<tr>
+<td>/media</td>
+<td>可移除媒体(如CD-ROM)的挂载点</td>
+</tr>
+<tr>
+<td>/mnt</td>
+<td>临时挂载的文件系统</td>
+</tr>
+<tr>
+<td>/opt</td>
+<td>备用目录，第三方程序的安装目录，默认为空</td>
+</tr>
+<tr>
+<td>/proc</td>
+<td>虚拟文件系统，将内核与进程状态归档为文本文件。例如：uptime、 network。在Linux中，对应Procfs格式挂载。/proc/meminfo：查看内存信息/proc/cpuinfo：cpu信息/proc/mounts：挂载信息/proc/loadavg：负载信息/proc/partitions：磁盘信息</td>
+</tr>
+<tr>
+<td>/root</td>
+<td>超级用户的家目录</td>
+</tr>
+<tr>
+<td>/selinux</td>
+<td>selinux相关的安全策略等信息存储的位置，默认为空</td>
+</tr>
+<tr>
+<td>/srv</td>
+<td>为服务提供数据存放位置，默认为空</td>
+</tr>
+<tr>
+<td>/sys</td>
+<td>虚拟文件系统，用于输出当前系统上硬件设备相关信息的虚拟文件系统</td>
+</tr>
+<tr>
+<td>/tmp</td>
+<td>临时文件(参见 /var/tmp)，在系统重启时目录中文件不会被保留。</td>
+</tr>
+<tr>
+<td>/usr</td>
+<td>用于存储只读用户数据的第二层次； 包含绝大多数的(多)用户工具和应用程序。</td>
+</tr>
+<tr>
+<td>/var</td>
+<td>频繁发生变化的文件——在正常运行的系统中其内容不断变化的文件，如日志，脱机文件和临时电子邮件文件。/var/cache：应用程序缓存数据目录/var/lib：应用程序状态信息数据/var/local：专用于/usr/local下的应用程序存储可变数据/var/log：日志目录文件  /var/log/messages系统日志  /var/log/secure 安全日志 SSH连接日志/var/lock：锁文件/var/run：与运行中进程相关的数据；通常存放进程的PID文件/var/spool：应用程序数据池/var/tmp：保存系统两次重启之间产生的临时数据</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h1 id="用自己的理解总结-文件管理，用户管理，组用户，权限管理相关的命令。"><a href="#用自己的理解总结-文件管理，用户管理，组用户，权限管理相关的命令。" class="headerlink" title="用自己的理解总结 文件管理，用户管理，组用户，权限管理相关的命令。"></a>用自己的理解总结 文件管理，用户管理，组用户，权限管理相关的命令。</h1><h2 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h2><p>相关常用命令：cd 、tree、cp、mv、mkdir、rm、cat、head、tail，touch</p>
+<h3 id="cd：目录切换"><a href="#cd：目录切换" class="headerlink" title="cd：目录切换"></a>cd：目录切换</h3><ul>
+<li><p>选项：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">cd</span>  ~：用户家目录<br><span class="hljs-built_in">cd</span> -：切换会上一目录 <br><span class="hljs-built_in">cd</span>  /data：访问某一个目录<br></code></pre></td></tr></table></figure></li>
+<li><p>用法：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs sh">[01:35:31 root@10 data]<span class="hljs-comment">#pwd</span><br>/data<br>[01:54:18 root@10 data]<span class="hljs-comment">#cd ~</span><br>[01:54:21 root@10 ~]<span class="hljs-comment">#pwd</span><br>/root<br>[01:54:23 root@10 ~]<span class="hljs-comment">#cd -</span><br>/data<br>[01:54:29 root@10 data]<span class="hljs-comment">#pwd</span><br>/data<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="tree：以树状格式列出目录的内容"><a href="#tree：以树状格式列出目录的内容" class="headerlink" title="tree：以树状格式列出目录的内容"></a>tree：以树状格式列出目录的内容</h3><ul>
+<li><p>选项</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs sh">-a 显示所有文件和目录。<br>-A 使用ASNI绘图字符显示树状图而非以ASCII字符组合。<br>-C 在文件和目录清单加上色彩，便于区分各种类型。<br>-d 显示目录名称而非内容。<br>-D 列出文件或目录的更改时间。<br>-f 在每个文件或目录之前，显示完整的相对路径名称。<br>-F 在执行文件，目录，Socket，符号连接，管道名称名称，各自加上<span class="hljs-string">&quot;*&quot;</span>,<span class="hljs-string">&quot;/&quot;</span>,<span class="hljs-string">&quot;=&quot;</span>,<span class="hljs-string">&quot;@&quot;</span>,<span class="hljs-string">&quot;|&quot;</span>号。<br>-g 列出文件或目录的所属群组名称，没有对应的名称时，则显示群组识别码。<br>-i 不以阶梯状列出文件或目录名称。<br>-L level 限制目录显示层级。<br>-l 如遇到性质为符号连接的目录，直接列出该连接所指向的原始目录。<br>-n 不在文件和目录清单加上色彩。<br>-N 直接列出文件和目录名称，包括控制字符。<br>-p 列出权限标示。<br>-P&lt;范本样式&gt; 只显示符合范本样式的文件或目录名称。<br>-q 用<span class="hljs-string">&quot;?&quot;</span>号取代控制字符，列出文件和目录名称。<br>-s 列出文件或目录大小。<br>-t 用文件和目录的更改时间排序。<br>-u 列出文件或目录的拥有者名称，没有对应的名称时，则显示用户识别码。<br>-x 将范围局限在现行的文件系统中，若指定目录下的某些子目录，其存放于另一个文件系统上，则将该子目录予以排除在寻找范围外。<br></code></pre></td></tr></table></figure></li>
+<li><p>用法</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs sh">[15:24:51 root@10 data]<span class="hljs-comment">#tree /root/study/</span><br>/root/study/<br>├── answer.sh<br>├── bashdir<br>│   ├── 1amyoo-v3.sh<br>│   ├── backup.sh<br>│   ├── bmi.sh<br>│   ├── chook_rabbit.sh<br>│   ├── color2.sh<br>│   ├── color.sh<br>│   ├── disk_check.sh<br>│   ├── hello.sh<br>│   ├── menu.sh<br>│   ├── os_release.sh<br>│   ├── rm2.sh<br>│   ├── rm.sh<br>│   ├── score.sh<br>│   ├── system_info.sh<br>│   ├── test.sh<br>│   ├── work_menu.sh<br>│   ├── yesorno.sh<br>│   └── zhang.sh<br>├── hello.sh<br>└── hello.sh.1<br><br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="cp：复制文件或目录"><a href="#cp：复制文件或目录" class="headerlink" title="cp：复制文件或目录"></a>cp：复制文件或目录</h3><ul>
+<li><p>选项：</p>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc"><span class="hljs-bullet">- </span>-a 复制目录时使用，它保留链接、文件属性，并复制目录下的所有内容<br><span class="hljs-bullet">- </span>-d：复制时保留链接。这里所说的链接相当于 Windows 系统中的快捷方式。<br><span class="hljs-bullet">- </span>-f：覆盖已经存在的目标文件而不给出提示。<br><span class="hljs-bullet">- </span>-i：与 <span class="hljs-strong">**-f**</span> 选项相反，在覆盖目标文件之前给出提示，要求用户确认是否覆盖，回答 <span class="hljs-strong">**y**</span> 时目标文件将被覆盖。<br><span class="hljs-bullet">- </span>-p：除复制文件的内容外，还把修改时间和访问权限也复制到新文件中。<br><span class="hljs-bullet">- </span>-r：若给出的源文件是一个目录文件，此时将复制该目录下所有的子目录和文件。<br></code></pre></td></tr></table></figure></li>
+<li><p>用法：</p>
+</li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><code class="hljs sh">[19:05:24 root@10 data]<span class="hljs-comment">#ls</span><br>[19:05:25 root@10 data]<span class="hljs-comment">#ls /root/data</span><br>a.txt  c.txt  etc2.tar.gz  etc.tar.gz  F.txt  H.txt  J.txt  L.txt        n.txt  p.txt  r.txt  t.txt  v.txt  x.txt  z.txt<br>A.txt  C.txt  etc3.tar.gz  e.txt       g.txt  i.txt  k.txt  messages.gz  N.txt  P.txt  R.txt  T.txt  V.txt  X.txt  Z.txt<br>b.txt  d.txt  etc4.tar.gz  E.txt       G.txt  I.txt  K.txt  m.txt        o.txt  q.txt  s.txt  u.txt  w.txt  y.txt<br>B.txt  D.txt  etc.tar      f.txt       h.txt  j.txt  l.txt  M.txt        O.txt  Q.txt  S.txt  U.txt  W.txt  Y.txt<br>[19:05:47 root@10 data]<span class="hljs-comment">#cp /root/data/* ./</span><br>[19:06:25 root@10 data]<span class="hljs-comment">#ls</span><br>a.txt  c.txt  etc2.tar.gz  etc.tar.gz  F.txt  H.txt  J.txt  L.txt        n.txt  p.txt  r.txt  t.txt  v.txt  x.txt  z.txt<br>A.txt  C.txt  etc3.tar.gz  e.txt       g.txt  i.txt  k.txt  messages.gz  N.txt  P.txt  R.txt  T.txt  V.txt  X.txt  Z.txt<br>b.txt  d.txt  etc4.tar.gz  E.txt       G.txt  I.txt  K.txt  m.txt        o.txt  q.txt  s.txt  u.txt  w.txt  y.txt<br>B.txt  D.txt  etc.tar      f.txt       h.txt  j.txt  l.txt  M.txt        O.txt  Q.txt  S.txt  U.txt  W.txt  Y.txt<br>[19:06:27 root@10 data]<span class="hljs-comment">#rm -fr ./*</span><br>[19:06:54 root@10 data]<span class="hljs-comment">#ls -l /root/data</span><br>总用量 121028<br>-rw-r--r--. 1 root root        0 7月  18 23:30 a.txt<br>-rw-r--r--. 1 root root        0 7月  18 23:30 A.txt<br>-rw-r--r--. 1 root root 29347840 7月  19 00:09 etc2.tar.gz<br>-rw-r--r--. 1 root root 29347840 7月  19 00:10 etc3.tar.gz<br>-rw-r--r--. 1 root root 29347840 7月  19 00:10 etc4.tar.gz<br>-rw-r--r--. 1 root root 29347840 7月  19 00:08 etc.tar<br>-rw-r--r--. 1 root root  6529123 7月  19 00:09 etc.tar.gz<br>[19:07:22 root@10 data]<span class="hljs-comment">#cp -a /root/data/* ./</span><br>[19:08:00 root@10 data]<span class="hljs-comment">#ll ./</span><br>总用量 121028<br>-rw-r--r--. 1 root root        0 7月  18 23:30 a.txt<br>-rw-r--r--. 1 root root        0 7月  18 23:30 A.txt<br>-rw-r--r--. 1 root root 29347840 7月  19 00:09 etc2.tar.gz<br>-rw-r--r--. 1 root root 29347840 7月  19 00:10 etc3.tar.gz<br>-rw-r--r--. 1 root root 29347840 7月  19 00:10 etc4.tar.gz<br>-rw-r--r--. 1 root root 29347840 7月  19 00:08 etc.tar<br>-rw-r--r--. 1 root root  6529123 7月  19 00:09 etc.tar.gz<br><br></code></pre></td></tr></table></figure>
+
+<h3 id="mv：移动文件"><a href="#mv：移动文件" class="headerlink" title="mv：移动文件"></a>mv：移动文件</h3><ul>
+<li><p>选项</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs diff"><span class="hljs-deletion">-b: 当目标文件或目录存在时，在执行覆盖前，会为其创建一个备份。</span><br><span class="hljs-deletion">-i: 如果指定移动的源目录或文件与目标的目录或文件同名，则会先询问是否覆盖旧文件，输入 y 表示直接覆盖，输入 n 表示取消该操作。</span><br><span class="hljs-deletion">-f: 如果指定移动的源目录或文件与目标的目录或文件同名，不会询问，直接覆盖旧文件。</span><br><span class="hljs-deletion">-n: 不要覆盖任何已存在的文件或目录。</span><br><span class="hljs-deletion">-u：当源文件比目标文件新或者目标文件不存在时，才执行移动操作</span><br></code></pre></td></tr></table></figure></li>
+<li><p>用法</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs stylus"><span class="hljs-selector-attr">[01:24:14 root@10 data]</span><span class="hljs-selector-id">#ls</span> /root/data<br><span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.txt</span>  c<span class="hljs-selector-class">.txt</span>  etc2<span class="hljs-selector-class">.tar</span><span class="hljs-selector-class">.gz</span>  etc<span class="hljs-selector-class">.tar</span><span class="hljs-selector-class">.gz</span>  F<span class="hljs-selector-class">.txt</span>  H<span class="hljs-selector-class">.txt</span>  J<span class="hljs-selector-class">.txt</span>  L<span class="hljs-selector-class">.txt</span>        n<span class="hljs-selector-class">.txt</span>  <span class="hljs-selector-tag">p</span><span class="hljs-selector-class">.txt</span>  r<span class="hljs-selector-class">.txt</span>  t<span class="hljs-selector-class">.txt</span>  v<span class="hljs-selector-class">.txt</span>  x<span class="hljs-selector-class">.txt</span>  z<span class="hljs-selector-class">.txt</span><br>A<span class="hljs-selector-class">.txt</span>  C<span class="hljs-selector-class">.txt</span>  etc3<span class="hljs-selector-class">.tar</span><span class="hljs-selector-class">.gz</span>  e<span class="hljs-selector-class">.txt</span>       g<span class="hljs-selector-class">.txt</span>  <span class="hljs-selector-tag">i</span><span class="hljs-selector-class">.txt</span>  k<span class="hljs-selector-class">.txt</span>  messages<span class="hljs-selector-class">.gz</span>  N<span class="hljs-selector-class">.txt</span>  P<span class="hljs-selector-class">.txt</span>  R<span class="hljs-selector-class">.txt</span>  T<span class="hljs-selector-class">.txt</span>  V<span class="hljs-selector-class">.txt</span>  X<span class="hljs-selector-class">.txt</span>  Z<span class="hljs-selector-class">.txt</span><br><span class="hljs-selector-tag">b</span><span class="hljs-selector-class">.txt</span>  d<span class="hljs-selector-class">.txt</span>  etc4<span class="hljs-selector-class">.tar</span><span class="hljs-selector-class">.gz</span>  E<span class="hljs-selector-class">.txt</span>       G<span class="hljs-selector-class">.txt</span>  I<span class="hljs-selector-class">.txt</span>  K<span class="hljs-selector-class">.txt</span>  m<span class="hljs-selector-class">.txt</span>        o<span class="hljs-selector-class">.txt</span>  <span class="hljs-selector-tag">q</span><span class="hljs-selector-class">.txt</span>  s<span class="hljs-selector-class">.txt</span>  u<span class="hljs-selector-class">.txt</span>  w<span class="hljs-selector-class">.txt</span>  y<span class="hljs-selector-class">.txt</span><br>B<span class="hljs-selector-class">.txt</span>  D<span class="hljs-selector-class">.txt</span>  etc<span class="hljs-selector-class">.tar</span>      f<span class="hljs-selector-class">.txt</span>       h<span class="hljs-selector-class">.txt</span>  j<span class="hljs-selector-class">.txt</span>  l<span class="hljs-selector-class">.txt</span>  M<span class="hljs-selector-class">.txt</span>        O<span class="hljs-selector-class">.txt</span>  Q<span class="hljs-selector-class">.txt</span>  S<span class="hljs-selector-class">.txt</span>  U<span class="hljs-selector-class">.txt</span>  W<span class="hljs-selector-class">.txt</span>  Y<span class="hljs-selector-class">.txt</span><br><span class="hljs-selector-attr">[01:24:34 root@10 data]</span><span class="hljs-selector-id">#pwd</span><br>/data<br><span class="hljs-selector-attr">[01:24:44 root@10 data]</span><span class="hljs-selector-id">#mv</span> /root/data<span class="hljs-comment">/*.gz /data/</span><br><span class="hljs-comment">[01:25:24 root@10 data]#ls</span><br><span class="hljs-comment">etc2.tar.gz  etc3.tar.gz  etc4.tar.gz  etc.tar.gz  messages.gz</span><br><span class="hljs-comment">[01:25:26 root@10 data]#touch a.txt</span><br><span class="hljs-comment">[01:25:53 root@10 data]#mv -f /root/data/a.txt /data/</span><br><span class="hljs-comment">[01:26:19 root@10 data]#ls</span><br><span class="hljs-comment">a.txt  etc2.tar.gz  etc3.tar.gz  etc4.tar.gz  etc.tar.gz  messages.gz</span><br><span class="hljs-comment">[01:26:22 root@10 data]#ll</span><br><span class="hljs-comment">总用量 92368</span><br><span class="hljs-comment">-rw-r--r--. 1 root root        0 7月  18 23:30 a.txt</span><br><span class="hljs-comment">-rw-r--r--. 1 root root 29347840 7月  19 00:09 etc2.tar.gz</span><br><span class="hljs-comment">-rw-r--r--. 1 root root 29347840 7月  19 00:10 etc3.tar.gz</span><br><span class="hljs-comment">-rw-r--r--. 1 root root 29347840 7月  19 00:10 etc4.tar.gz</span><br><span class="hljs-comment">-rw-r--r--. 1 root root  6529123 7月  19 00:09 etc.tar.gz</span><br><span class="hljs-comment">-rw-r--r--. 1 root root     6013 7月  18 23:52 messages.gz</span><br><span class="hljs-comment">[01:26:25 root@10 data]#mv -v /root/data/*.txt /data/</span><br><span class="hljs-comment">copied &#x27;/root/data/A.txt&#x27; -&gt; &#x27;/data/A.txt&#x27;</span><br><span class="hljs-comment">已删除&#x27;/root/data/A.txt&#x27;</span><br><span class="hljs-comment">copied &#x27;/root/data/b.txt&#x27; -&gt; &#x27;/data/b.txt&#x27;</span><br><span class="hljs-comment">已删除&#x27;/root/data/b.txt&#x27;</span><br><span class="hljs-comment">copied &#x27;/root/data/B.txt&#x27; -&gt; &#x27;/data/B.txt&#x27;</span><br><span class="hljs-comment">已删除&#x27;/root/data/B.txt&#x27;</span><br><span class="hljs-comment">copied &#x27;/root/data/c.txt&#x27; -&gt; &#x27;/data/c.txt&#x27;</span><br><span class="hljs-comment">已删除&#x27;/root/data/c.txt&#x27;</span><br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="mkdir：创建文件夹"><a href="#mkdir：创建文件夹" class="headerlink" title="mkdir：创建文件夹"></a>mkdir：创建文件夹</h3><ul>
+<li><p>选项：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">-<span class="hljs-selector-tag">p</span> 确保目录名称存在，不存在的就建一个。<br></code></pre></td></tr></table></figure></li>
+<li><p>用法：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs sh">[01:31:28 root@10 data]<span class="hljs-comment">#mkdir dir</span><br>[01:31:35 root@10 data]<span class="hljs-comment">#mkdir dir02/dir02</span><br><span class="hljs-built_in">mkdir</span>: 无法创建目录 “dir02/dir02”: 没有那个文件或目录<br>[01:31:46 root@10 data]<span class="hljs-comment">#mkdir -p  dir02/dir02</span><br>[01:31:52 root@10 data]<span class="hljs-comment">#ls dir02/</span><br>dir02<br><br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="rm：删除目录文件"><a href="#rm：删除目录文件" class="headerlink" title="rm：删除目录文件"></a>rm：删除目录文件</h3><ul>
+<li><p>选项：</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs diff"><span class="hljs-deletion">-i 删除前逐一询问确认。</span><br><span class="hljs-deletion">-f 即使原档案属性设为唯读，亦直接删除，无需逐一确认。</span><br><span class="hljs-deletion">-r 将目录及以下之档案亦逐一删除。</span><br></code></pre></td></tr></table></figure></li>
+<li><p>用法：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs sh">[01:34:03 root@10 data]<span class="hljs-comment">#type rm</span><br><span class="hljs-built_in">rm</span> 是 `<span class="hljs-built_in">rm</span> -i<span class="hljs-string">&#x27; 的别名</span><br><span class="hljs-string">[01:34:24 root@10 data]#rm dir</span><br><span class="hljs-string">rm: 无法删除&#x27;</span><span class="hljs-built_in">dir</span><span class="hljs-string">&#x27;: 是一个目录</span><br><span class="hljs-string">[01:34:37 root@10 data]#rm -r dir</span><br><span class="hljs-string">rm：是否删除目录 &#x27;</span><span class="hljs-built_in">dir</span><span class="hljs-string">&#x27;？y</span><br><span class="hljs-string">[01:35:02 root@10 data]#ls</span><br><span class="hljs-string">dir02</span><br><span class="hljs-string">[01:35:04 root@10 data]#rm -rf dir02</span><br><span class="hljs-string">[01:35:28 root@10 data]#ls</span><br><span class="hljs-string"></span><br></code></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h2><p>相关常用命令：useradd 、userdel、usermod、passwd、su </p>
+<h3 id="useradd-：添加用户"><a href="#useradd-：添加用户" class="headerlink" title="useradd ：添加用户"></a>useradd ：添加用户</h3><ul>
+<li>c comment 指定一段注释性描述。</li>
+<li>-d 目录 指定用户主目录，如果此目录不存在，则同时使用-m选项，可以创建主目录。</li>
+<li>-g 用户组 指定用户所属的用户组。</li>
+<li>-G 用户组，用户组 指定用户所属的附加组。</li>
+<li>-s Shell文件 指定用户的登录Shell。</li>
+<li>-u 用户号 指定用户的用户号，如果同时有-o选项，则可以重复使用其他用户的标识号</li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs sh">[19:51:07 root@10 ~]<span class="hljs-comment">#useradd mage </span><br>[19:58:29 root@10 ~]<span class="hljs-comment">#id mage</span><br>uid=1006(mage) gid=1006(mage) 组=1006(mage)<br>[19:58:33 root@10 ~]<span class="hljs-comment">#tail -n 1  /etc/passwd</span><br>mage:x:1006:1006::/home/mage:/bin/bash<br><br>[19:59:20 root@10 ~]<span class="hljs-comment">#useradd mage02 -c &quot;测试账号&quot; -d /data/mage -u 1020 -s /bin/bash </span><br>[20:02:35 root@10 ~]<span class="hljs-comment">#id mage02</span><br>uid=1020(mage02) gid=1020(mage02) 组=1020(mage02)<br>[20:02:41 root@10 ~]<span class="hljs-comment">#tail -n 1  /etc/passwd</span><br>mage02:x:1020:1020:测试账号:/data/mage:/bin/bash<br><br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="userdel：删除用户"><a href="#userdel：删除用户" class="headerlink" title="userdel：删除用户"></a>userdel：删除用户</h3><ul>
+<li><p>选项：</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs diff"><span class="hljs-deletion">-r 它的作用是把用户的主目录一起删除</span><br></code></pre></td></tr></table></figure></li>
+<li><p>用法：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs sh">[20:05:20 root@10 ~]<span class="hljs-comment">#id mage</span><br><span class="hljs-built_in">id</span>: “mage”：无此用户<br>[20:05:45 root@10 ~]<span class="hljs-comment">#ls /home/</span><br>jira  mage  test01  test02  zhangsan  zhangxuelong  zxl<br><br>[20:11:02 root@10 ~]<span class="hljs-comment">#useradd mage02</span><br>正在创建信箱文件: 文件已存在<br>[20:11:22 root@10 ~]<span class="hljs-comment">#id  mage02</span><br>uid=1006(mage02) gid=1006(mage02) 组=1006(mage02)<br>[20:11:33 root@10 ~]<span class="hljs-comment">#tail /etc/passwd -n 1</span><br>mage02:x:1006:1006::/home/mage02:/bin/bash<br>[20:12:03 root@10 ~]<span class="hljs-comment">#userdel -r mage02</span><br>userdel：/var/spool/mail/mage02 并不属于 mage02，所以不会删除<br>[20:12:19 root@10 ~]<span class="hljs-comment">#ls /home/</span><br>jira  test01  test02  zhangsan  zhangxuelong  zxl<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="usermod：修改账号"><a href="#usermod：修改账号" class="headerlink" title="usermod：修改账号"></a>usermod：修改账号</h3><ul>
+<li><p>选项：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs sh">-c&lt;备注&gt; 　修改用户帐号的备注文字。<br>-d登入目录&gt; 　修改用户登入时的目录。<br>-e&lt;有效期限&gt; 　修改帐号的有效期限。<br>-f&lt;缓冲天数&gt; 　修改在密码过期后多少天即关闭该帐号。<br>-g&lt;群组&gt; 　修改用户所属的群组。<br>-G&lt;群组&gt; 　修改用户所属的附加群组。<br>-l&lt;帐号名称&gt; 　修改用户帐号名称。<br>-L 　锁定用户密码，使密码无效。<br>-s&lt;shell&gt; 　修改用户登入后所使用的shell。<br>-u&lt;uid&gt; 　修改用户ID。<br></code></pre></td></tr></table></figure></li>
+<li><p>用法</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs sh">[20:15:48 root@10 ~]<span class="hljs-comment">#useradd mage</span><br>[20:16:08 root@10 ~]<span class="hljs-comment">#tail /etc/passwd -n 1</span><br>mage:x:1006:1006::/home/mage:/bin/bash<br>[20:16:22 root@10 ~]<span class="hljs-comment">#usermod mage -c &quot;测试账号&quot; -d /data/mage -u 1008 -g zxl </span><br>[20:17:58 root@10 ~]<span class="hljs-comment">#tail /etc/passwd -n 1</span><br>mage:x:1008:1000:测试账号:/data/mage:/bin/bash<br>[20:18:01 root@10 ~]<span class="hljs-comment">#ls /home/</span><br>jira  mage  test01  test02  zhangsan  zhangxuelong  zxl<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="passwd：修改密码"><a href="#passwd：修改密码" class="headerlink" title="passwd：修改密码"></a>passwd：修改密码</h3><ul>
+<li><p>选项：</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs diff"><span class="hljs-deletion">-f 强迫用户下次登录时修改口令。</span><br><span class="hljs-deletion">-l 锁定口令，即禁用账号</span><br><span class="hljs-deletion">-d 使账号无口令</span><br><span class="hljs-deletion">-u 口令解锁。</span><br></code></pre></td></tr></table></figure></li>
+<li><p>用法：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs sh">[20:20:30 root@10 ~]<span class="hljs-comment">#su zxl</span><br>[zxl@10 root]$ <span class="hljs-built_in">cd</span> ~<br>[zxl@10 ~]$ passwd 123456<br>passwd：只有 root 用户才能指定用户名。<br>[zxl@10 ~]$ <span class="hljs-built_in">exit</span><br><span class="hljs-built_in">exit</span><br>[20:22:16 root@10 ~]<span class="hljs-comment">#</span><br>[20:22:16 root@10 ~]<span class="hljs-comment">#passwd zxl</span><br>更改用户 zxl 的密码 。<br>新的 密码：<br>无效的密码： 密码少于 8 个字符<br>重新输入新的 密码：<br>passwd：所有的身份验证令牌已经成功更新。<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="su-：切换用户"><a href="#su-：切换用户" class="headerlink" title="su ：切换用户"></a>su ：切换用户</h3><ul>
+<li><p>选项：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">切换当前用户家目录<br></code></pre></td></tr></table></figure></li>
+<li><p>用法：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sh">[20:23:53 root@10 ~]<span class="hljs-comment">#su zxl</span><br>[zxl@10 root]$ <span class="hljs-built_in">exit</span><br><span class="hljs-built_in">exit</span><br>[20:27:37 root@10 ~]<span class="hljs-comment">#su - zxl</span><br>[zxl@10 ~]$ <br></code></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="组用户"><a href="#组用户" class="headerlink" title="组用户"></a>组用户</h2><p>相关常用命令：groupadd 、groupdel,groupmod</p>
+<h3 id="groupadd-添加组"><a href="#groupadd-添加组" class="headerlink" title="groupadd:添加组"></a>groupadd:添加组</h3><ul>
+<li><p>选项：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs stylus">-f, <span class="hljs-attr">--force</span>   如果组已经存在则成功退出并且如果 GID 已经存在则取消 -g<br>-g, <span class="hljs-attr">--gid</span> GID  为新组使用 GID<br>-h, <span class="hljs-attr">--help</span>      显示帮助信息并推出<br>-K, <span class="hljs-attr">--key</span> KEY=VALUE   不使用 /etc/login<span class="hljs-selector-class">.defs</span> 中的默认值<br>-o, <span class="hljs-attr">--non-unique</span>    允许创建有重复 GID 的组<br>-<span class="hljs-selector-tag">p</span>, <span class="hljs-attr">--password</span> PASSWORD  为新组使用加密过的密码<br></code></pre></td></tr></table></figure></li>
+<li><p>用法：</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">[<span class="hljs-number">20</span>:<span class="hljs-number">34</span>:<span class="hljs-number">40</span> root<span class="hljs-subst">@10</span> ~]<span class="hljs-meta">#groupadd mage</span><br>[<span class="hljs-number">20</span>:<span class="hljs-number">34</span>:<span class="hljs-number">43</span> root<span class="hljs-subst">@10</span> ~]<span class="hljs-meta">#tail /etc/group -n 1</span><br><span class="hljs-symbol">mage:</span><span class="hljs-built_in">x</span>:<span class="hljs-number">1006</span>:<br>[<span class="hljs-number">20</span>:<span class="hljs-number">35</span>:<span class="hljs-number">06</span> root<span class="hljs-subst">@10</span> ~]<span class="hljs-meta">#groupadd mage02 -g 1011</span><br>[<span class="hljs-number">20</span>:<span class="hljs-number">36</span>:<span class="hljs-number">24</span> root<span class="hljs-subst">@10</span> ~]<span class="hljs-meta">#tail /etc/group -n 1</span><br><span class="hljs-symbol">mage02:</span><span class="hljs-built_in">x</span>:<span class="hljs-number">1011</span>:<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="groupdel：删除组"><a href="#groupdel：删除组" class="headerlink" title="groupdel：删除组"></a>groupdel：删除组</h3><ul>
+<li><p>用法：</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">[<span class="hljs-number">20</span>:<span class="hljs-number">39</span>:<span class="hljs-number">15</span> root<span class="hljs-subst">@10</span> ~]<span class="hljs-meta">#groupdel mage</span><br>[<span class="hljs-number">20</span>:<span class="hljs-number">39</span>:<span class="hljs-number">23</span> root<span class="hljs-subst">@10</span> ~]<span class="hljs-meta">#groupdel mage02</span><br>[<span class="hljs-number">20</span>:<span class="hljs-number">39</span>:<span class="hljs-number">25</span> root<span class="hljs-subst">@10</span> ~]<span class="hljs-meta">#tail /etc/group -n 2</span><br><span class="hljs-symbol">apache:</span><span class="hljs-built_in">x</span>:<span class="hljs-number">48</span>:<br><span class="hljs-symbol">jira:</span><span class="hljs-built_in">x</span>:<span class="hljs-number">1005</span>:<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="groupmod：修改组"><a href="#groupmod：修改组" class="headerlink" title="groupmod：修改组"></a>groupmod：修改组</h3><ul>
+<li><p>选项</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs diff"><span class="hljs-deletion">-g &lt;群组识别码&gt; 　设置欲使用的群组识别码。</span><br><span class="hljs-deletion">-o 　重复使用群组识别码。</span><br><span class="hljs-deletion">-n &lt;新群组名称&gt; 　设置欲使用的群组名称。</span><br></code></pre></td></tr></table></figure></li>
+<li><p>用法：</p>
+</li>
+<li><p>```<br>[20:39:28 root@10 ~]#groupadd mage<br>[20:40:03 root@10 ~]#tail /etc/group -n 1<br>mage:x:1006:<br>[20:43:15 root@10 ~]#groupmod  -n mage02 mage<br>[20:43:43 root@10 ~]#tail /etc/group -n 1<br>mage02:x:1006:<br>[20:43:49 root@10 ~]#groupmod -g 1020 mage02<br>[20:45:03 root@10 ~]#tail /etc/group -n 1<br>mage02:x:1020:<br>[20:45:04 root@10 ~]#</p>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs clean"><br>  <br><br>## 权限管理<br><br>### 访问权限<br><br>- 选项<br><br></code></pre></td></tr></table></figure>
+<p>读取（r）： 允许查看文件内容，显示目录列表<br>写入（w）： 允许修改文件内容，允许在目录中新建、删除、移动文件或者子目录<br>可执行（x）： 允许运行程序，切换目录<br>无权限（-）： 没有权限</p>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs clean"><br>### 权限介绍<br><br>![image<span class="hljs-number">-20220801001505259</span>](第一周作业/image<span class="hljs-number">-20220801001505259.</span>png)<br><br></code></pre></td></tr></table></figure></li>
+<li><p>rw-r–r– . 1 root root 1258 Jun 3 2019 initial-setup-ks.cfg<br>d rwxr-xr-x . 2 root root 6 Jun 3 2019 Music</p>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><code class="hljs gherkin"><br>|<span class="hljs-string"> -    </span>|<span class="hljs-string"> 代表普通文件                                                 </span>|<br>|<span class="hljs-string"> ---- </span>|<span class="hljs-string"> ------------------------------------------------------------ </span>|<br>|<span class="hljs-string"> d    </span>|<span class="hljs-string"> 代表目录                                                     </span>|<br>|<span class="hljs-string"> c    </span>|<span class="hljs-string"> 代表字符型文件                                               </span>|<br>|<span class="hljs-string"> l    </span>|<span class="hljs-string"> 代表链接文件                                                 </span>|<br>|<span class="hljs-string"> b    </span>|<span class="hljs-string"> 块文件。这是一种特殊设备文件，存储设备都是这种文件，如分区文件/dev/sda1就是这种文件 </span>|<br>|<span class="hljs-string"> p    </span>|<span class="hljs-string"> 管道符文件。这是一种非常少见的特殊设备文件                   </span>|<br>|<span class="hljs-string"> s    </span>|<span class="hljs-string"> 套接字文件。这也是一种特殊设备文件，一些服务支持socket访问就会产生这样的文件 </span>|<br>|<span class="hljs-string">      </span>|<span class="hljs-string">                                                              </span>|<br><br><br><br>|<span class="hljs-string"> rwx </span>|<span class="hljs-string"> r-x </span>|<span class="hljs-string"> r-x </span>|<span class="hljs-string"> root </span>|<span class="hljs-string"> root</span><br><span class="hljs-string"></span><br><span class="hljs-string"></span>|<span class="hljs-string"> 属主权限 </span>|<span class="hljs-string"> 属组权限 </span>|<span class="hljs-string"> 其他人权限 </span>|<span class="hljs-string"> 属主 </span>|<span class="hljs-string"> 属组</span><br><span class="hljs-string"></span><br><span class="hljs-string"></span>|<span class="hljs-string"> 权限项   </span>|<span class="hljs-string"> 读               </span>|<span class="hljs-string"> 写               </span>|<span class="hljs-string"> 执行             </span>|<span class="hljs-string"> 读               </span>|<span class="hljs-string"> 写               </span>|<span class="hljs-string"> 执行             </span>|<span class="hljs-string"> 读       </span>|<span class="hljs-string"> 写       </span>|<span class="hljs-string"> 执行     </span>|<br>|<span class="hljs-string"> -------- </span>|<span class="hljs-string"> ---------------- </span>|<span class="hljs-string"> ---------------- </span>|<span class="hljs-string"> ---------------- </span>|<span class="hljs-string"> ---------------- </span>|<span class="hljs-string"> ---------------- </span>|<span class="hljs-string"> ---------------- </span>|<span class="hljs-string"> -------- </span>|<span class="hljs-string"> -------- </span>|<span class="hljs-string"> -------- </span>|<br>|<span class="hljs-string"> 字符表示 </span>|<span class="hljs-string"> r                </span>|<span class="hljs-string"> w                </span>|<span class="hljs-string"> x                </span>|<span class="hljs-string"> r                </span>|<span class="hljs-string"> w                </span>|<span class="hljs-string"> x                </span>|<span class="hljs-string"> r        </span>|<span class="hljs-string"> w        </span>|<span class="hljs-string"> x        </span>|<br>|<span class="hljs-string"> 数字表示 </span>|<span class="hljs-string"> 4                </span>|<span class="hljs-string"> 2                </span>|<span class="hljs-string"> 1                </span>|<span class="hljs-string"> 4                </span>|<span class="hljs-string"> 2                </span>|<span class="hljs-string"> 1                </span>|<span class="hljs-string"> 4        </span>|<span class="hljs-string"> 2        </span>|<span class="hljs-string"> 1        </span>|<br>|<span class="hljs-string"> 权限分配 </span>|<span class="hljs-string"> 文件所有者(属主) </span>|<span class="hljs-string"> 文件所有者(属主) </span>|<span class="hljs-string"> 文件所有者(属主) </span>|<span class="hljs-string"> 文件所属组(属组) </span>|<span class="hljs-string"> 文件所属组(属组) </span>|<span class="hljs-string"> 文件所属组(属组) </span>|<span class="hljs-string"> 其他用户 </span>|<span class="hljs-string"> 其他用户 </span>|<span class="hljs-string"> 其他用户 </span>|<br><br><br><br>文件默认权限644，文件夹默认权限755<br><br>关常用命令：chmod、chown 、ACL、umask <br><br><span class="hljs-comment">### chmod：命令是控制用户对文件的权限的命令</span><br><br>- 选项<br><br></code></pre></td></tr></table></figure>
+<ul>
+<li>u（owner）表示文件所有者，即创建文件的人</li>
+<li>g（group）:表示和文件所有者相同组的用户</li>
+<li> o（other）：表示非文件所有者和相同group的用户</li>
+<li>a（all）：表示所有用户</li>
+<li> [±=]表示</li>
+<li>+：表示给指定的用户授权指定的权限</li>
+<li>-: 表示撤销指定用户的某个权限</li>
+<li>=: 将指定用户的指定权限重新设置</li>
+<li> [rwx]表示</li>
+<li>r：可读权限</li>
+<li>w：可写权限</li>
+<li>x：可执行权限<figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><code class="hljs tap"><br>- 用法：<br><br>  ```sh<br>  [00:35:41 root@10 data]<span class="hljs-comment">#ll</span><br>  总用量 0<br>  drwxr-xr-x<span class="hljs-number"> 3 </span>zxl  zxl <span class="hljs-number"> 33 </span>8月  <span class="hljs-number"> 1 </span>00:22 dir<br>  -rw-r--r--<span class="hljs-number"> 1 </span>root root <span class="hljs-number"> 0 </span>8月  <span class="hljs-number"> 1 </span>00:17 myfile<br>  [00:35:46 root@10 data]<span class="hljs-comment">#chmod u+x myfile </span><br>  [00:36:26 root@10 data]<span class="hljs-comment">#ll</span><br>  总用量 0<br>  drwxr-xr-x<span class="hljs-number"> 3 </span>zxl  zxl <span class="hljs-number"> 33 </span>8月  <span class="hljs-number"> 1 </span>00:22 dir<br>  -rwxr--r--<span class="hljs-number"> 1 </span>root root <span class="hljs-number"> 0 </span>8月  <span class="hljs-number"> 1 </span>00:17 myfile<br>  [00:36:27 root@10 data]<span class="hljs-comment">#chmod g+w myfile </span><br>  [00:37:03 root@10 data]<span class="hljs-comment">#ll</span><br>  总用量 0<br>  drwxr-xr-x<span class="hljs-number"> 3 </span>zxl  zxl <span class="hljs-number"> 33 </span>8月  <span class="hljs-number"> 1 </span>00:22 dir<br>  -rwxrw-r--<span class="hljs-number"> 1 </span>root root <span class="hljs-number"> 0 </span>8月  <span class="hljs-number"> 1 </span>00:17 myfile<br>  [00:37:04 root@10 data]<span class="hljs-comment">#chmod o+x myfile </span><br>  [00:37:31 root@10 data]<span class="hljs-comment">#ll</span><br>  总用量 0<br>  drwxr-xr-x<span class="hljs-number"> 3 </span>zxl  zxl <span class="hljs-number"> 33 </span>8月  <span class="hljs-number"> 1 </span>00:22 dir<br>  -rwxrw-r-x<span class="hljs-number"> 1 </span>root root <span class="hljs-number"> 0 </span>8月  <span class="hljs-number"> 1 </span>00:17 myfile<br>  [00:37:36 root@10 data]<span class="hljs-comment">#chmod a-x  myfile </span><br>  [00:38:20 root@10 data]<span class="hljs-comment">#ll</span><br>  总用量 0<br>  drwxr-xr-x<span class="hljs-number"> 3 </span>zxl  zxl <span class="hljs-number"> 33 </span>8月  <span class="hljs-number"> 1 </span>00:22 dir<br>  -rw-rw-r--<span class="hljs-number"> 1 </span>root root <span class="hljs-number"> 0 </span>8月  <span class="hljs-number"> 1 </span>00:17 myfile<br>  [00:38:22 root@10 data]<span class="hljs-comment">#chmod 644  myfile </span><br>  [00:38:46 root@10 data]<span class="hljs-comment">#ll</span><br>  总用量 0<br>  drwxr-xr-x<span class="hljs-number"> 3 </span>zxl  zxl <span class="hljs-number"> 33 </span>8月  <span class="hljs-number"> 1 </span>00:22 dir<br>  -rw-r--r--<span class="hljs-number"> 1 </span>root root <span class="hljs-number"> 0 </span>8月  <span class="hljs-number"> 1 </span>00:17 myfile<br>  [00:38:48 root@10 data]<span class="hljs-comment">#chmod 755  myfile </span><br>  [00:38:58 root@10 data]<span class="hljs-comment">#ll</span><br>  总用量 0<br>  drwxr-xr-x<span class="hljs-number"> 3 </span>zxl  zxl <span class="hljs-number"> 33 </span>8月  <span class="hljs-number"> 1 </span>00:22 dir<br>  -rwxr-xr-x<span class="hljs-number"> 1 </span>root root <span class="hljs-number"> 0 </span>8月  <span class="hljs-number"> 1 </span>00:17 myfile<br>  <br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h3 id="chown-：命令用于设置文件所有者和文件关联组的命令"><a href="#chown-：命令用于设置文件所有者和文件关联组的命令" class="headerlink" title="chown ：命令用于设置文件所有者和文件关联组的命令"></a>chown ：命令用于设置文件所有者和文件关联组的命令</h3><p>​    Linux/Unix 的文件调用权限分为三级 : 文件所有者（Owner）、用户组（Group）、其它用户（Other Users）。</p>
+<ul>
+<li><p>选项</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs diff"><span class="hljs-deletion">-R：递归设置权限，也就是给予目录中的所有文件和子目录设定权限</span><br><span class="hljs-deletion">--reference=参考文件或目录：使用参考文件或参考目录的权限来设置目标文件或目录的权限</span><br></code></pre></td></tr></table></figure></li>
+<li><p><code>权限模式</code>：权限模式分为<strong>符号组合</strong>和<strong>八进制数组合</strong></p>
+</li>
+<li><p><strong>符号组合</strong>的格式是<code>[ugoa][[+-=][permission]]</code>，也就是<code>[用户身份][[赋予方式][权限]]</code>的格式</p>
+<ul>
+<li><p>用户身份参数</p>
+<figure class="highlight ldif"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs ldif">OWNER <span class="hljs-comment">#只修改所有者</span><br><span class="hljs-attribute">OWNER</span>:GROUP <span class="hljs-comment">#同时修改所有者和属组</span><br>:GROUP <span class="hljs-comment">#只修改属组，冒号也可用 . 替换</span><br><span class="hljs-literal">-</span>-reference=RFILE <span class="hljs-comment">#参考指定的的属性，来修改</span><br><span class="hljs-literal">-</span>R <span class="hljs-comment">#递归，此选项慎用，非常危险！</span><br></code></pre></td></tr></table></figure></li>
+<li><p>赋予方式</p>
+<figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs excel">+：加入权限<br>-：减去权限<br>=：设置权限<br></code></pre></td></tr></table></figure></li>
+<li><p>权限</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">r:</span> 读取权限(read)<br><span class="hljs-symbol">w:</span> 写权限(write)<br><span class="hljs-symbol">x:</span> 执行权限(execute)<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>八进制数组合</strong>的格式是 <code>[0-7][0-7][0-7]</code> 三位数字组成(每一位数字都是权限之和)</p>
+<ul>
+<li><p>第一位是所属者权限之和</p>
+</li>
+<li><p>第二位是所属组权限之和</p>
+</li>
+<li><p>第三位其他人权限之和</p>
+</li>
+</ul>
+<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs llvm">r 读取权限对应的数字是 <span class="hljs-number">4</span><br>w 写权限对应的数字是 <span class="hljs-number">2</span><br><span class="hljs-keyword">x</span> 执行权限对应的数字是 <span class="hljs-number">1</span><br>例如读写权限 rw 八进制数表示 <span class="hljs-number">6</span><br></code></pre></td></tr></table></figure></li>
+<li><p>用法</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><code class="hljs sh">[00:17:32 root@10 data]<span class="hljs-comment">#touch myfile</span><br>[00:17:48 root@10 data]<span class="hljs-comment">#ll</span><br>总用量 0<br>-rw-r--r-- 1 root root 0 8月   1 00:17 myfile<br>[00:17:51 root@10 data]<span class="hljs-comment">#chown zxl myfile </span><br>[00:18:28 root@10 data]<span class="hljs-comment">#ll</span><br>总用量 0<br>-rw-r--r-- 1 zxl root 0 8月   1 00:17 myfile<br>[00:18:30 root@10 data]<span class="hljs-comment">#chown :zhangxuelong myfile </span><br>[00:19:33 root@10 data]<span class="hljs-comment">#ll</span><br>总用量 0<br>-rw-r--r-- 1 zxl zhangxuelong 0 8月   1 00:17 myfile<br>[00:19:36 root@10 data]<span class="hljs-comment">#chown root:root myfile </span><br>[00:19:57 root@10 data]<span class="hljs-comment">#ll</span><br>总用量 0<br>-rw-r--r-- 1 root root 0 8月   1 00:17 myfile<br>[00:19:58 root@10 data]<span class="hljs-comment">#mkdir  ./dir</span><br>[00:21:32 root@10 data]<span class="hljs-comment">#chown -R zxl:zxl dir/</span><br>[00:21:50 root@10 data]<span class="hljs-comment">#touch dir/file.txt</span><br>[00:22:06 root@10 data]<span class="hljs-comment">#ll dir/</span><br>总用量 0<br>-rw-r--r-- 1 root root 0 8月   1 00:22 file.txt<br>[00:22:12 root@10 data]<span class="hljs-comment">#mkdir dir/dir</span><br>[00:22:49 root@10 data]<span class="hljs-comment">#touch dir/dir/file2.txt</span><br>[00:23:04 root@10 data]<span class="hljs-comment">#ll dir/dir/file2.txt</span><br>-rw-r--r-- 1 root root 0 8月   1 00:23 <span class="hljs-built_in">dir</span>/dir/file2.txt<br>[00:23:18 root@10 data]<span class="hljs-comment">#chown -R zxl:zxl dir/</span><br>[00:23:43 root@10 data]<span class="hljs-comment">#ll dir/</span><br>总用量 0<br>drwxr-xr-x 2 zxl zxl 23 8月   1 00:23 <span class="hljs-built_in">dir</span><br>-rw-r--r-- 1 zxl zxl  0 8月   1 00:22 file.txt<br>[00:23:49 root@10 data]<span class="hljs-comment">#ll dir/dir/</span><br>总用量 0<br>-rw-r--r-- 1 zxl zxl 0 8月   1 00:23 file2.tx<br>************************************************************<br>[00:39:00 root@10 data]<span class="hljs-comment">#ll dir/</span><br>总用量 0<br>drwxr-xr-x 2 zxl zxl 23 8月   1 00:23 <span class="hljs-built_in">dir</span><br>-rw-r--r-- 1 zxl zxl  0 8月   1 00:22 file.txt<br>[00:48:26 root@10 data]<span class="hljs-comment">#ll dir/dir/</span><br>总用量 0<br>-rw-r--r-- 1 zxl zxl 0 8月   1 00:23 file2.txt<br>[00:48:36 root@10 data]<span class="hljs-comment">#chmod -R 777 dir/</span><br>[00:49:04 root@10 data]<span class="hljs-comment">#ll dir/</span><br>总用量 0<br>drwxrwxrwx 2 zxl zxl 23 8月   1 00:23 <span class="hljs-built_in">dir</span><br>-rwxrwxrwx 1 zxl zxl  0 8月   1 00:22 file.txt<br>[00:49:14 root@10 data]<span class="hljs-comment">#ll dir/dir/</span><br>总用量 0<br>-rwxrwxrwx 1 zxl zxl 0 8月   1 00:23 file2.txt<br></code></pre></td></tr></table></figure></li>
+</ul>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/08/02/Centos8%E7%B3%BB%E7%BB%9F%E6%96%87%E4%BB%B6%E4%B8%A2%E5%A4%B1%EF%BC%8C%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E5%90%AF%E5%8A%A8%E4%BF%AE%E6%94%B9%E5%8A%9E%E6%B3%95/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Centos8系统文件丢失，无法正常启动修改办法</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/07/24/%E7%A3%81%E7%9B%98%E4%B8%8E%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86/">
+                        <span class="hidden-mobile">磁盘与存储管理</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
